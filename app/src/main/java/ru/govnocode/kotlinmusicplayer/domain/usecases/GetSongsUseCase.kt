@@ -5,7 +5,7 @@ import ru.govnocode.kotlinmusicplayer.domain.repositories.SongRepository
 
 class GetSongsUseCase(private val songRepository: SongRepository) {
 
-    operator fun invoke() : List<Song>{
+    operator fun invoke(): List<Song> {
         return songRepository.getAll()
     }
 
